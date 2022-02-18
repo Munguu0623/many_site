@@ -1,0 +1,17 @@
+{
+  "name": "basar_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss  tailwind.css -o ./css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.23"
+  }
+}
