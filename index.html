@@ -4,22 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/css/svg-with-js.min.css" />
+    <!-- Font -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700"
       rel="stylesheet"
       type="text/css"
     />
+    <!-- style css -->
     <link rel="stylesheet" href="css/main.css" />
     <title>Basar.mn</title>
   </head>
   <body>
     <header>
-      <nav>
-        <a href="#"><img src="" alt="" /></a>
-        <ul>
-          <li><a href=""></a></li>
+      <nav class="p-5 bg-white shadow flex">
+        <div class="flex justify-between items-center">
+          <!-- Лого а линк дотор хийж өгсөн нүүр хэсэг рүү үсрэнэ -->
+          <a href="#" class="text-2xl cursor-pointer">
+            <img class="h-10 inline" src="/image/menu_logo/menu_logo.png" />
+            <img
+              class="h-10 inline"
+              src="/image/menu_logo/menu_logo_02.png"
+              alt=""
+            />
+          </a>
+          <div class="w-16">
+            <h4 class="italic text-gray-500">Бид нэг гэр бүл</h4>
+          </div>
+        </div>
+
+        <ul class="flex items-center pl-8">
+          <li class="mx-2 my-6 md:my-0">
+            <a href="#" class="text-base hover:text-cyan-500 duration-500"
+              >Нүүр</a
+            >
+          </li>
+          <li class="mx-3 my-6 md:my-0">
+            <a href="#" class="text-base hover:text-cyan-500 duration-500"
+              >Амьтад</a
+            >
+          </li>
+          <li class="mx-3 my-6 md:my-0">
+            <a href="#" class="text-base hover:text-cyan-500 duration-500"
+              >Мэдээ</a
+            >
+          </li>
+          <li class="mx-3 my-6 md:my-0">
+            <a href="#" class="text-base hover:text-cyan-500 duration-500"
+              >Блог</a
+            >
+          </li>
+          <li class="mx-3 my-6 md:my-0">
+            <a href="#" class="text-base hover:text-cyan-500 duration-400"
+              >Байгууллагууд</a
+            >
+          </li>
+          <li class="mx-3 my-6 md:my-0">
+            <a href="#" class="text-base hover:text-cyan-500 duration-400"
+              >Үрчилгээ&Зар</a
+            >
+          </li>
+          <li class="mx-3 my-6 md:my-0">
+            <a href="#" class="text-base hover:text-cyan-500 duration-400"
+              >Анхны тусламж</a
+            >
+          </li>
+          <button
+            class="bg-sky-500 rounded-3xl px-2 py-1 absolute ml-40.625rem z-10"
+          >
+            <i class="fa-solid fa-cart-shopping text-white"></i>
+          </button>
+          <button
+            class="bg-sky-600 text-white duration-500 px-8 py-2 hover:bg-sky-500 rounded-3xl text-sm font-Roboto relative"
+          >
+            <span class="ml-2">ДЭЛГҮҮР</span>
+          </button>
+          <button
+            class="bg-orange-400 text-white duration-500 px-4 py-2 mx-2 hover:bg-orange-500 rounded-3xl text-sm font-Roboto"
+          >
+            НЭВТРЭХ
+          </button>
         </ul>
       </nav>
     </header>
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
   </body>
 </html>
