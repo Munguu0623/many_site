@@ -10,6 +10,8 @@
 /*мэдээний картын style*/
 .news-card-container {
   @apply flex flex-shrink-0;
+
+  
 }
 
 /*үйлчилгээний хэсэгий арын background style*/

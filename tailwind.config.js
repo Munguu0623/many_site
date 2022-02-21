@@ -15,6 +15,7 @@ module.exports = {
         btnYagaan: "#ff6f4f",
         btnSmColor: "#f4c467",
         bgServiceColor: "#f8fbfb",
+        lgtitle: "#515577",
         greengradient: "rgba(180deg, #36BC49 0%, #03A21A 100%);",
       },
       borderRadius: {
