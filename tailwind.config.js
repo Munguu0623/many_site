@@ -7,6 +7,7 @@ module.exports = {
       },
       spacing: {
         "52.0625rem": "52.0625rem",
+        "32rem":"32rem",
       },
       colors: {
         blueMain: "#33A0FF",
